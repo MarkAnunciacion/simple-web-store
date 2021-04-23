@@ -1,0 +1,127 @@
+<!-- Submitted by: Mark Anunciacion
+       Student ID: 053750147
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mark.css">
+    <title>Hillhop</title>
+
+    <script>
+        function inputCheck(object)
+        {
+            if(object.value.length > object.max.length)
+                object.value = object.value.slice(0, object.max.length)
+                
+            if(!object.value)
+            object.value = object.value.slice(0)
+        }
+    </script>
+</head>
+
+<body>
+    <hr>
+    <section class="container-1">
+
+        <h2>.:: Order ::.</h2>
+
+        <table class="table-order">
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <th class="th-row">Bikes</th>
+                <td>
+                    <select name="bikes" id="bikes">
+                        <option value="" disabled selected hidden>Please select an item</option>
+                        <optgroup label="Trek">
+                            <option value="Trek Marlin 6 Men's">Marlin 6 - Men's 2021</option>
+                            <option value="Trek Marlin 6 Women's">Marlin 6 - Women's 2021</option>
+                            <option value="Trek Marlin 5">Marlin 5 - 2021</option>
+                        </optgroup>
+
+                        <optgroup label="Specialized">
+                            <option value="Women's Pitch Comp 27.5 - 2019">Women's Pitch Comp 27.5 - 2019</option>
+                            <option value="Enduro 29 - 2019">Enduro 29 - 2019</option>
+                            <option value="Men's Stumpjumper Comp Carbon 29 - 2019">Men's Stumpjumper Comp Carbon 29 - 2019</option>
+                        </optgroup>
+
+                        <optgroup label="Rocky Mountain">
+                            <option value="Suzi Q Alloy 50 - 2018">Suzi Q Alloy 50 - 2018</option>
+                            <option value="Altitude Powerplay Carbon 70 - 2020">Altitude Powerplay Carbon 70 - 2020</option>
+                            <option value="Altitude Carbon 70 - 2020">Altitude Carbon 70 - 2020</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td><input min="0" max="999" oninput="inputCheck(this)" type="number" placeholder="0-999"></td>
+            </tr>
+
+            <tr>
+                <th class="th-row">Components</th>
+                <td>
+                    <select>
+                        <option value="" disabled selected hidden>Please select an item</option>
+                            <optgroup label="Tires">
+                                <option value="Vittoria">Vittoria Evolution II Tire</option>
+                                <option value="Surly">Surly Nate Tire</option>
+                            </optgroup>
+                            
+                            <optgroup label="Chains">
+                                <option value="Shimano Chain">Shimano Deore 10-Speed Chain</option>
+                                <option value="SRAM Chain">SRAM PC-991 9-Speed Chain</option>
+                                <option value="Spank Chain">Spank Tweet 1/2-Link Chain</option>
+                            </optgroup>
+
+                            <optgroup label="Others">
+                                <option value="Stan's NoTubes">Stan's Dart Tubeless Repair Tool</option>
+                                <option value="Chromag Handlebar">Chromag OSX 35 Handlebar</option>
+                                <option value="Fox Racing Shox">Fox Float Fork Volume Spacer</option>
+                                <option value="Specialized Shock Absorber">Specialized Ohlins SJ Shock Absorber</option>
+                            </optgroup>                          
+                    </select>
+                </td>
+                <td><input min="0" max="999" oninput="inputCheck(this)" type="number" placeholder="0-999"></td>
+            </tr>
+
+            <tr>
+                <th class="th-row">Apparel</th>
+                <td>
+                    <select name="apparel" id="apparel">
+                        <option value="" disabled selected hidden>Please select an item</option>
+                            <optgroup label="Helmets">
+                                <option value="Specialized Ambush Comp">Specialized Ambush Comp</option>
+                                <option value="Specialized Charmonix">Specialized Charmonix</option>
+                                <option value="Specialized Echelon">Specialized Echelon II MIPS</option>
+                            </optgroup>
+                            
+                            <optgroup label="Gloves">
+                                <option value="Giro Supergel">Giro Strada Massa Supergel Gloves</option>
+                                <option value="Specialized Women's BG">Specialized Women's BG Dual Gel Gloves</option>
+                                <option value="Specialized BG Long Finger">Specialized BG Gel Long Finger Gloves</option>
+                            </optgroup>
+
+                            <optgroup label="Shoes">
+                                <option value="Specialized Expert">Specialized Expert XC Mountain Bike Shoes</option>
+                                <option value="Specialized Tahoe">Specialized Tahoe Shoes</option>
+                                <option value="Shimano AM7">Shimano AM7 Shoes</option>
+                            </optgroup>                          
+                    </select>
+                </td>
+                <td><input min="0" max="999" oninput="inputCheck(this)" type="number" placeholder="0-999"></td>
+            </tr>
+        </table>
+
+        <table class="table-button">
+            <tr>
+                <td><button accesskey="r" onclick="Javascript: alert('Thank you for your purchase! Stay Hoppy!')" title="Order Now" tabindex="1">O<u>r</u>der Now</button></td>
+                <td><button accesskey="n" onclick="Javascript: alert('Please Come again and be hoppy!')" title="Cancel" tabindex="2">Ca<u>n</u>cel</button></td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

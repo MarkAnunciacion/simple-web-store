@@ -1,0 +1,8 @@
+{
+	"name": "Web222-Assignment2",
+	"version": "1.0.0",
+	"description": "Assignment #2 in WEB222",
+	"main": "index.js",
+	"author": "Mark Anunciacion",
+	"license": "MIT"
+}
