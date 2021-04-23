@@ -1,4 +1,4 @@
-#Simple Web Store
+# Simple Web Store
 
 Simple non-responsive web store made with HTML and CSS only as a school assignment.
 
